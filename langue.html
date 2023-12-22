@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Trouvez votre voie vers une carrière réussie en Allemagne avec MIKAEL'S INSTITUT FÜR SPRACHEN UND INTEGRATION . Découvrez des opportunités professionnelles exceptionnelles et perfectionnez vos compétences linguistiques en allemand, français, anglais, italien et espagnol. Notre expertise et notre accompagnement personnalisé vous guideront vers des contrats de travail enrichissants. Rejoignez-nous pour une éducation multilingue de qualité et une immersion professionnelle réussie en Allemagne.">
+        <link rel="icon" href="logo.jpg" type="image/x-icon">
+        <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+        <title>Langue</title>
+      </head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url("fond2.png");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .langue {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .langue img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #ff0000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 6%;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            width: 0;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 1;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            left: 25px;
+            font-size: 36px;
+            margin-right: 50px;
+        }
+
+        #main {
+            transition: margin-right .5s;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidebar {padding-top: 15px;}
+            .sidebar a {font-size: 18px;}
+        }
+        p{
+            color: #fff;
+        }
+        h1{
+            color: #fff;
+        }
+        h2{
+            color: #fff;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <header>
+        <img sizes="100px" src="logo.ico" alt="Logo du site">
+      <h1>En coopération avec Smart Learning Space</h1>
+      <button class="langue" onclick="openNav()">Pages</button> </header>
+    <div class="sidebar" id="mySidebar"> <a href="javascript:void(0)" class="closebtn"
+
+        onclick="closeNav()">×</a> <a href="index.html">Acceuil</a> <a href="apropos.html">A
+            propos de nous</a> <a href="langue.html">Langue</a> <a href="contact.html">Contact</a> </div>
+    <div id="main">
+      <section>
+        <section>
+          <div class="langue"> <img src="allemand.jpg" alt="Cours d'allemand" style="max-width: 300px;">
+            <h2>Cours d'allemand</h2>
+            <p>Découvrez la richesse de la langue allemande avec nos cours
+              interactifs.</p>
+          </div>
+          <div class="langue"> <img src="francais.jpg" alt="Cours de français"
+
+              style="max-width: 300px;">
+            <h2>Cours de français</h2>
+            <p>Explorez l'élégance de la langue française à travers nos leçons
+              captivantes.</p>
+          </div>
+          <div class="langue"> <img src="anglais.jpg" alt="Cours d'anglais" style="max-width: 300px;">
+            <h2>Cours d'anglais</h2>
+            <p>Maîtrisez l'anglais, une compétence cruciale dans le monde
+              professionnel d'aujourd'hui.</p>
+          </div>
+          <div class="langue"> <img src="italien.jpg" alt="Cours d'italien" style="max-width: 300px;">
+            <h2>Cours d'italien</h2>
+            <p>Tombez amoureux de l'italien en apprenant avec des méthodes
+              dynamiques et modernes.</p>
+          </div>
+          <div class="langue"> <img src="espagnol.jpg" alt="Cours d'espagnol" style="max-width: 300px;">
+            <h2>Cours d'espagnol</h2>
+            <p>Explorez la richesse culturelle de la langue espagnole avec nos
+              instructeurs qualifiés.</p>
+          </div>
+        </section>
+      </section>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginRight = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginRight= "0";
+        }
+    </script>
+  </body>
+</html>
